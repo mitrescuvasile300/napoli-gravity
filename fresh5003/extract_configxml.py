@@ -24,6 +24,8 @@ async def main():
               name: module.Title || m.Name || 'Categorie',
               image150: module.ImgLogoURL150 || module.ImgLogoURL || '',
               image600: module.ImgLogoURL600 || '',
+              img: module.Img || '',
+              imgVersions: module.ImgVersions || '',
               products: []
             };
             const ids = module.Products || [];
@@ -38,6 +40,8 @@ async def main():
                 grams: pr.GramsPerUnitType || 0,
                 priceText: pr.PriceText || '',
                 price,
+                img: pr.Img || '',
+                imgVersions: pr.ImgVersions || '',
                 img150: pr.ImgLogoURL150 || pr.ImgLogoURL || '',
                 img600: pr.ImgLogoURL600 || '',
                 available: pr.AvailableInWEB !== false
