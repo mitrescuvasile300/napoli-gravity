@@ -4,20 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Napoli Centrale — Comandă Online</title>
+  <meta name="description" content="Comandă online Napoli Centrale: meniu, prețuri reale, checkout rapid." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="top">
     <div class="wrap nav">
-      <h1>🍕 Napoli Centrale</h1>
-      <a class="btn" href="#checkout">Checkout</a>
+      <div>
+        <h1>🍕 Napoli Centrale</h1>
+        <small>Comandă online • livrare & pickup</small>
+      </div>
+      <div class="nav-actions">
+        <input id="search" class="search" placeholder="Caută produs..." />
+        <a class="btn" href="#checkout">Checkout</a>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
     <section class="hero">
-      <h2>Gust autentic italian, comandă rapidă</h2>
+      <h2>Meniu real + prețuri reale din sursa originală</h2>
       <p id="meta"></p>
+      <div class="hero-badges">
+        <span>✅ Date reale</span>
+        <span>✅ Checkout funcțional</span>
+        <span>✅ UX mobile-first</span>
+      </div>
     </section>
 
     <section>
@@ -26,14 +38,26 @@
     </section>
 
     <section id="checkout" class="checkout">
-      <h3>Coș & Checkout</h3>
+      <div class="checkout-head">
+        <h3>Coș & Checkout</h3>
+        <button id="clearCart" class="btn ghost" type="button">Golește coș</button>
+      </div>
+
       <div id="cart"></div>
+
       <form id="orderForm">
-        <input name="name" placeholder="Nume" required />
-        <input name="phone" placeholder="Telefon" required />
+        <div class="row2">
+          <input name="name" placeholder="Nume" required />
+          <input name="phone" placeholder="Telefon" required />
+        </div>
         <input name="address" placeholder="Adresă" required />
         <textarea name="notes" placeholder="Observații"></textarea>
-        <button class="btn" type="submit">Trimite comanda</button>
+
+        <div class="order-actions">
+          <button class="btn" type="submit">Trimite comanda</button>
+          <button class="btn ghost" id="copyOrder" type="button">Copiază comanda</button>
+          <a class="btn wa" id="waLink" target="_blank" rel="noreferrer">Trimite pe WhatsApp</a>
+        </div>
       </form>
       <p id="ok"></p>
     </section>
