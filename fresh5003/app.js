@@ -43,6 +43,10 @@ function renderGrid(){
   const grid=document.getElementById('grid');
   grid.innerHTML='';
   const catImg=imageForCategoryName(cat.name);
+  const catTitle=document.getElementById('catTitle');
+  const catMeta=document.getElementById('catMeta');
+  if(catTitle) catTitle.textContent=cat.name;
+  if(catMeta) catMeta.textContent=`${cat.products.length} produse în această categorie`;
 
   cat.products
     .filter(p=>!q || (p.name||'').toLowerCase().includes(q) || (p.description||'').toLowerCase().includes(q))
@@ -51,6 +55,7 @@ function renderGrid(){
       const pImg = p.image || catImg;
     const img=pImg ? `<img class="thumb" src="${pImg}" alt="${p.name}" loading="lazy"/>` : `<div class="thumb ph">🍽️</div>`;
       d.innerHTML=`${img}
+        <div class='badge'>REAL</div>
         <h4>${p.name}</h4>
         <p class='desc'>${p.description||''}</p>
         <p class='meta'>${p.gramaj||''}g</p>
