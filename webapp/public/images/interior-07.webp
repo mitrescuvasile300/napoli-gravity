@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html  >
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="appy.ro">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/napoli-centrale-logo2-362x127.png" type="image/x-icon">
+ <meta name="description" content="Pizzeria Napoli Centrale, restaurant italian în Cluj cu rețete AUTENTICE de pizza napoletana și paste făcute în casă. Livrări la domiciliu și rezervări.">
+  
+  
+  <title>Pizza Cluj cu Livrare la Domiciliu | Pizzeria Napoli Centrale</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/gallery/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  <!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-KJLZTJK');</script>
+
+<!-- End Google Tag Manager -->
+  
+  
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KJLZTJK
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) -->
+
+
+  
+  <section class="menu cid-rRumRBXaep" once="menu" id="menu2-0">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    
+                        <img src="assets/images/napoli-centrale-logo2-362x127.webp" alt="Napoli" title="" style="height: 8rem;">
+                    
+                </span>
+                
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-danger text-primary display-4" href="tel:0264450500"><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>0264450500&nbsp;</a>
+                </li><li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="index.html#contacts1-8"><strong>
+                        Contact</strong></a></li></ul>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://www.pizzerianapolicentrale.ro/meniu.html"><span class="mbri-shopping-cart mbr-iconfont mbr-iconfont-btn"></span>
+                    Comandă in Cluj</a> <a class="btn btn-sm btn-primary display-4" href="https://www.pizzerianapolicentrale.ro/meniu-floresti.html"><span class="mbri-shopping-cart mbr-iconfont mbr-iconfont-btn"></span>
+                    Comandă în Florești</a></div>
+        </div>
+    </nav>
+</section>
+
+<section class="cid-sXix1xLBMU mbr-fullscreen mbr-parallax-background" id="header2-d">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(35, 35, 35);"></div>
+
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Napoli Centrale</h1>
+                
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">Originalitatea gustului bucătăriei Italiene.<br></p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-white display-4" href="https://www.pizzerianapolicentrale.ro/meniu.html">Comandă în Cluj-Napoca</a> <a class="btn btn-md btn-white display-4" href="https://www.pizzerianapolicentrale.ro/meniu-floresti.html">Comandă în Florești</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+<section class="features18 popup-btn-cards cid-u5HMdbUmDF" id="features18-18">
+
+    
+
+    
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Te așteptăm în Cluj-Napoca sau Florești</h2>
+        
+        <div class="media-container-row pt-5 ">
+            <div class="card p-3 col-12 col-md-6">
+                <div class="card-wrapper ">
+                    <div class="card-img" style=" min-height: 350px;">
+                        <div class="mbr-overlay"></div>
+                        
+                        <!-- <img src="assets/images/04-napoli-2022-1046x698.webp" alt="Pizza Cluj Napoli Centrale"> -->
+
+                        <div class="responsive-iframe-container">   <iframe style="position: absolute;   top: 0;   left: 0;   width: 100%;   height: 100%;   border: 0;" id="myIframe" src="https://www.tours.romaniavr.ro/virtualtour/Napoli-Centrale-Pizzerie-f37c0a2d"></iframe> </div> 
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">Napoli Centrale Cluj</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7"><br><strong><a href="https://www.pizzerianapolicentrale.ro/meniu.html" class="text-primary" target="_blank">Vezi meniul</a></strong><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        
+                        <img src="assets/images/-exp4626-800x534.webp" alt="Floresti">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Napoli Centrale Floresti</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"><br><a href="https://www.pizzerianapolicentrale.ro/meniu-floresti.html" class="text-primary" target="_blank">Vezi meniul</a></p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="header1 cid-u5HNFi4753 mbr-parallax-background" id="header1-1a">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0; background-color: rgb(243, 244, 246);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Traditie Napoletana din 1998</h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="header1 cid-u5H7JEPM6Y" id="header16-l">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                
+                <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-2">
+                    Despre noi</h3>
+                <p class="mbr-text pb-3 mbr-fonts-style display-7">
+                    Pizzeria Spaghetteria Napoli Centrale este pioniera bucătăriei cu specific italianesc din orașul Cluj Napoca, încă din anul 1998. Originalitatea gustului bucătăriei Italiene este succesul nostru, fiecare produs având savoarea autentică a unei plimbări pe străzile din minunatul oraș Napoli.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="testimonials3 cid-u5GIY5Fzee" id="testimonials3-h">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="media-content px-3 align-self-center mbr-white py-2">
+                <p class="mbr-text testimonial-text mbr-fonts-style display-7"><br><br>Puteți savura o pizza pe minunata noastră terasă, oază de liniște în centrul Clujului, înconjurați de o gradină plină de verdeață.<br><br>Conducerea familială conferă restaurantului Napoli Centrale o atmosferă primitoare care te face să te simți ca și acasă. Pastele noastre “fatte in casa” vă vor cuceri din prima îmbucătură, savoarea lor autentică și aspectul lor încântător vă așteaptă proaspete în fiecare zi. Lasagne, Ravioli, Tortelloni, Tagliatelle, Rigatini, Pappardelle, Fagottini … mmmm ….<br></p>
+                <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">Che buone !!!</p>
+                <p class="mbr-author-desc mbr-fonts-style display-7"></p>
+            </div>
+
+            <div class="mbr-figure pl-lg-5" style="width: 160%;">
+              <img src="assets/images/whatsapp-image-2024-02-29-at-18.35.20-973x900.webp" alt="Edgardo Ciancio Pizzeria Napoli Centrale">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="header1 cid-u5H8S0R1zM mbr-parallax-background" id="header1-m">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0; background-color: rgb(243, 244, 246);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Paste "fatte in casa"</h1>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">O savoare autentică</h3>
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section info3 cid-u9kXkW8sSz" id="info3-1b">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column title col-12 col-md-10">
+                <h2 class="align-left mbr-bold mbr-white pb-3 mbr-fonts-style display-2">Pizza Delivery – Livrări la domiciliu</h2>
+                <h3 class="mbr-section-subtitle align-left mbr-light mbr-white pb-3 mbr-fonts-style display-5">Ți-e poftă de o mâncare bună dar nu vrei să ieși din casă? Nici o problemă, facem și livrări la domiciliu. Pizza delicioasă sau paste făcute în casă. Alege serviciul nostru de pizza delivery și bucură-te de o experiență cu totul deosebită. <br>Comandă online!</h3>
+                
+                <div class="mbr-section-btn align-left py-4"><a class="btn btn-primary display-4" href="https://www.pizzerianapolicentrale.ro/meniu.html">Comandă aici</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services1 cid-rRunsYDEIF" id="services1-5">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                
+                <h3 class="mbr-section-subtitle mbr-light mbr-fonts-style display-5">
+                    <strong><a href="https://www.pizzerianapolicentrale.ro/meniu.html" class="text-primary">Vezi AICI tot meniul</a>&nbsp;de la Napoli Centrale Cluj-Napoca</strong></h3>
+            </div>
+            <!--Card-1-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/amatriciana-696x557.webp" alt="paste" title="">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">Paste</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Cele mai bune paste "fatte in casa".
+                        </p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="https://www.pizzerianapolicentrale.ro/meniu.html" class="btn btn-primary-outline display-4">
+                                Vezi meniul</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-2-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/capricciosa-comune3-696x614.webp" alt="pizza" title="">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Pizza</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Pizza napoletană într-o varietate de gusturi.
+                        </p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="https://www.pizzerianapolicentrale.ro/meniu.html" class="btn btn-primary-outline display-4">
+                                Vezi meniul</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-3-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/s-696x680.webp" alt="desert" title="">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Desert</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            O dulce tentație italiană.
+                        </p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="https://www.pizzerianapolicentrale.ro/meniu.html" class="btn btn-primary-outline display-4">Vezi meniul</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-4-->
+            
+        </div>
+    </div>
+</section>
+
+<section class="counters2 counters cid-u5HdCCpChy" id="counters2-t">
+
+    
+
+    
+
+    <div class="container pt-4 mt-2">
+        <div class="media-container-row">
+            <div class="media-block" style="width: 59%;">
+                
+                
+                <div class="mbr-figure">
+                    <img src="assets/images/whatsapp-image-2024-02-29-at-18.35.202-1023x834.webp" alt="">
+                </div>
+            </div>
+            <div class="cards-block">
+                <div class="cards-container">
+                    <div class="card px-3 align-left col-12 col-md-6">
+                        <div class="panel-item p-3">
+                            <div class="card-img pb-3">
+                                
+                                <h3 class="count py-3 mbr-fonts-style display-2">din 1998</h3>
+                            </div>
+                            <div class="card-text">
+                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-5">Peste 25 de ani de tradiție Napoletana</h4>
+                                <p class="mbr-content-text mbr-fonts-style display-7"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card px-3 align-left col-12 col-md-6">
+                        <div class="panel-item p-3">
+                            <div class="card-img pb-3">
+                                
+                                <h3 class="count py-3 mbr-fonts-style display-2">
+                                    300</h3>
+                            </div>
+                            <div class="card-text">
+                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">de procese chimice care creează cel mai bun aluat</h4>
+                                <p class="mbr-content-text mbr-fonts-style display-7"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card px-3 align-left col-12 col-md-6">
+                        <div class="panel-item p-3">
+                            <div class="card-img pb-3">
+                                
+                                <h3 class="count py-3 mbr-fonts-style display-1">
+                                    100%</h3>
+                            </div>
+                            <div class="card-text">
+                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-5">
+                                    Pasiune pentru pizza Napoletana</h4>
+                                <p class="mbr-content-text mbr-fonts-style display-7"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-gallery mbr-slider-carousel cid-u5H9uVk2sg" id="gallery2-p">
+
+    
+
+    <div class="container">
+        <div><!-- Filter --><div class="mbr-gallery-filter container gallery-filter-active"><ul buttons="0"><li class="mbr-gallery-filter-all active"><a class="btn btn-md btn-primary-outline display-7" href="">Toate pozele</a></li></ul></div><!-- Gallery --><div class="mbr-gallery-row"><div class="mbr-gallery-layout-default"><div><div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="interior"><div href="#lb-gallery2-p" data-slide-to="0" data-bs-slide-to="0" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/04-napoli-2022-1199x800-800x534.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="interior"><div href="#lb-gallery2-p" data-slide-to="1" data-bs-slide-to="1" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/randare4-1024x578-800x452.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="interior"><div href="#lb-gallery2-p" data-slide-to="2" data-bs-slide-to="2" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/06-napoli-2022-1199x800-800x534.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="interior"><div href="#lb-gallery2-p" data-slide-to="3" data-bs-slide-to="3" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/03-napoli-2022-1199x800-800x534.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="terasa"><div href="#lb-gallery2-p" data-slide-to="4" data-bs-slide-to="4" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-7541-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="terasa"><div href="#lb-gallery2-p" data-slide-to="5" data-bs-slide-to="5" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-7542-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="terasa"><div href="#lb-gallery2-p" data-slide-to="6" data-bs-slide-to="6" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-7544-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="terasa"><div href="#lb-gallery2-p" data-slide-to="7" data-bs-slide-to="7" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-9451-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="paste"><div href="#lb-gallery2-p" data-slide-to="8" data-bs-slide-to="8" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/exp1746-534x800-534x800.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="paste"><div href="#lb-gallery2-p" data-slide-to="9" data-bs-slide-to="9" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/exp1642-800x534-457x534.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="paste"><div href="#lb-gallery2-p" data-slide-to="10" data-bs-slide-to="10" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/exp1667-800x534-800x534.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="paste"><div href="#lb-gallery2-p" data-slide-to="11" data-bs-slide-to="11" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/exp1678-800x534-800x534.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="12" data-bs-slide-to="12" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/marinara10-2000x2000-800x800.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="13" data-bs-slide-to="13" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/napoletana5-2000x2000-800x800.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="14" data-bs-slide-to="14" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/pizza-pugliese1-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="paste"><div href="#lb-gallery2-p" data-slide-to="15" data-bs-slide-to="15" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/cartoccio2-2000x1418-800x567.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="paste"><div href="#lb-gallery2-p" data-slide-to="16" data-bs-slide-to="16" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/paccheri-p.fresco8-2000x1333-800x533.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="17" data-bs-slide-to="17" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/pulcinella5-2000x1338-800x535.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="18" data-bs-slide-to="18" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-1153-2000x2667-800x1067.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="19" data-bs-slide-to="19" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-1119-2000x2667-800x1067.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="20" data-bs-slide-to="20" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/prosciutto-crudo1-2000x1966-800x786.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="21" data-bs-slide-to="21" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-1133-2000x2667-800x1067.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="22" data-bs-slide-to="22" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-1111-2000x2667-800x1067.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="interior"><div href="#lb-gallery2-p" data-slide-to="23" data-bs-slide-to="23" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-667-1170x1442-800x986.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="24" data-bs-slide-to="24" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-421-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="25" data-bs-slide-to="25" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-368-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="26" data-bs-slide-to="26" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-430-2000x1500-800x600.webp" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="pizza"><div href="#lb-gallery2-p" data-slide-to="27" data-bs-slide-to="27" data-toggle="modal" data-bs-toggle="modal"><img src="assets/images/img-7949-1575x2100-800x1067.webp" alt="" title=""><span class="icon-focus"></span></div></div></div></div><div class="clearfix"></div></div></div><!-- Lightbox --><div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-bs-keyboard="true" data-interval="false" data-bs-interval="false" id="lb-gallery2-p"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="carousel-inner"><div class="carousel-item"><img src="assets/images/04-napoli-2022-1199x800.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/randare4-1024x578.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/06-napoli-2022-1199x800.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/03-napoli-2022-1199x800.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-7541-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-7542-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-7544-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-9451-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/-exp1746-534x800.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/-exp1642-800x534.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/-exp1667-800x534.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/-exp1678-800x534.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/marinara10-2000x2000.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/napoletana5-2000x2000.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/pizza-pugliese1-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/cartoccio2-2000x1418.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/paccheri-p.fresco8-2000x1333.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/pulcinella5-2000x1338.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-1153-2000x2667.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-1119-2000x2667.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/prosciutto-crudo1-2000x1966.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-1133-2000x2667.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-1111-2000x2667.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-667-1170x1442.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-421-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-368-2000x1500.webp" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-430-2000x1500.webp" alt="" title=""></div><div class="carousel-item active"><img src="assets/images/img-7949-1575x2100.webp" alt="" title=""></div></div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-gallery2-p"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only visually-hidden">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#lb-gallery2-p"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only visually-hidden">Next</span></a><a class="close" href="#" role="button" data-dismiss="modal" data-bs-dismiss="modal"><span class="sr-only visually-hidden">Close</span></a></div></div></div></div></div>
+    </div>
+
+</section>
+
+<section class="mbr-section info3 cid-u5HgNM03bn mbr-parallax-background" id="info3-v">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column title col-12 col-md-10">
+                <h2 class="align-left mbr-bold mbr-white pb-3 mbr-fonts-style display-2">Rezervari</h2>
+                <h3 class="mbr-section-subtitle align-left mbr-light mbr-white pb-3 mbr-fonts-style display-5">Pentru rezervări sau mese festive ne puteți contacta zilnic la numărul de telefon: <br><a href="tel:+40 264 450500" class="text-white">+40 264 450500</a></h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features10 cid-rRusCzYgKf" id="features10-c">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card p-3 col-12 col-md-6">
+                <div class="media mb-3">
+                    
+                    <h4 class="card-title media-body py-3 mbr-fonts-style display-7">
+                        Program</h4>
+                </div>
+                <div class="card-box">
+                    <p class="mbr-text mbr-fonts-style display-7">Luni-Vineri: 10:30 - 23:00<br>Sâmbată-Duminică: 11:00 - 23:00
+<br><br></p>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6">
+                <div class="media mb-3">
+                    
+                    <h4 class="card-title media-body py-3 mbr-fonts-style display-7">
+                        Orar livrări</h4>
+                </div>
+                <div class="card-box">
+                    <p class="mbr-text mbr-fonts-style display-7">Luni-Vineri: 10:30 - 22:30
+<br>Sâmbată-Duminică: 11:00 - 22:30&nbsp;</p>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="step2 cid-rRusmPZu9m mbr-parallax-background" id="step2-a">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(229, 228, 229);">
+    </div>
+    
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><strong>
+            Comandă online</strong></h2>
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5"><strong>
+            cea mai ușoara metodă de a comanda mâncare</strong></h3>
+        <div class="step-container row justify-content-center">
+            <div class="card col-12 col-md-4 separline">
+                <div class="step-element">
+                    <div class="step-wrapper pb-3">
+                        <h3 class="step d-flex align-items-center justify-content-center m-auto">
+                            1
+                        </h3>
+                    </div>          
+                    <div class="step-text-content align-center">
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Adaugi produsele preferate in coș</h4>
+                        <p class="mbr-step-text mbr-fonts-style display-7"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-12 separline col-md-4">
+                <div class="step-element">
+                    <div class="step-wrapper pb-3">
+                        <h3 class="step d-flex align-items-center justify-content-center m-auto">
+                            2
+                        </h3>
+                    </div>          
+                    <div class="step-text-content align-center">
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Alegi tipul serviciului (livrare/ridicare produse), metoda de plată și ora la care vrei produsele</h4>
+                        <p class="mbr-step-text mbr-fonts-style display-7"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-4 col-12 separline last-child">
+                <div class="step-element">
+                    <div class="step-wrapper pb-3">
+                        <h3 class="step d-flex align-items-center justify-content-center m-auto">
+                            3
+                        </h3>
+                    </div>          
+                    <div class="step-text-content align-center">
+                        <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">Trimiți comanda</h4>
+                        <p class="mbr-step-text mbr-fonts-style display-7"></p>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section contacts1 cid-rRuq9V39m1" id="contacts1-8">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title col-12">
+                <h2 class="align-left mbr-fonts-style display-1">Contact Cluj<br></h2>
+                
+            </div>
+            <!--Left-->
+            <div class="col-12 col-md-6">
+                <div class="left-block wrapper">
+                    <div class="b b-adress">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            Adresa:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">Str. Dobrogeanu Gherea Nr. 17<br>Cluj Napoca</p>
+                    </div>
+                    <div class="b b-phone">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            Telefon:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7"><a href="tel:+40 264 450 500" class="text-primary">+40 264 450 500</a></p>
+                    </div>
+                    <div class="b b-mail">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            E-mail:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">
+                             <a href="mailto:contact@pizzerianapolicentrale.ro" class="text-primary">contact@pizzerianapolicentrale.ro</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Right-->
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDbnCmnHmtigIYiD8jIfeHQv7gW2ANhHD4&amp;q=Str. Dobrogeanu Gherea Nr. 17Cluj Napoca" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section contacts1 cid-ucaYX79e1b" id="contacts1-1c">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title col-12">
+                <h2 class="align-left mbr-fonts-style display-1">Contact Floresti<br></h2>
+                
+            </div>
+            <!--Left-->
+            <div class="col-12 col-md-6">
+                <div class="left-block wrapper">
+                    <div class="b b-adress">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            Adresa:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">Strada Florilor 325 N<br>Floresti</p>
+                    </div>
+                    <div class="b b-phone">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            Telefon:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7"><a href="tel:0040364 715 555" class="text-primary">0364 715 555</a></p>
+                    </div>
+                    <div class="b b-mail">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            E-mail:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">
+                             <a href="mailto:floresti@nint.ro" class="text-primary">floresti@nint.ro</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Right-->
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7QWkvlxV39ZsyKvhZRjPGVqlJFvxxNkw&amp;q=Strada Florilor 325 NFloresti" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rRuql2XJkR mbr-parallax-background" id="footer5-9">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(239, 239, 239);"></div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-3">
+                <div class="media-wrap">
+                    
+                       <img src="assets/images/logo-j2-271x95.webp" alt="Mobirise" title="">
+                    
+                </div>
+            </div>
+            <div class="col-md-9">
+                <p class="mbr-text align-right links mbr-fonts-style display-7"><a href="https://www.pizzerianapolicentrale.ro/meniu.html" class="text-primary">COMANDĂ MÂNCAREA AICI</a></p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-md-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2024 Napoli Centrale by <a href="https://appy.ro/restaurants/" class="text-danger text-primary" target="_blank"><strong>APPY.RO</strong></a></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g298474-d3345031-Reviews-Napoli_centrale-Cluj_Napoca_Cluj_County_Northwest_Romania_Transylvania.html" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-tripadvisor socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/PizzeriaNapoliCentrale" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.instagram.com/napoli_centrale_cluj" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="display-7 " style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem; overflow: hidden;"><a href="https://mobiri.se/334744" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1; left:200%"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-maker.html">AI Website Maker</a></section>
+
+
+<script src="assets/popper/popper.min.js"></script>  <script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/parallax/jarallax.min.js"></script>  <script src="assets/mbr-popup-btns/mbr-popup-btns.js"></script>  <script src="assets/masonry/masonry.pkgd.min.js"></script>  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/gallery/player.min.js"></script>  <script src="assets/gallery/script.js"></script>  <script src="assets/slidervideo/script.js"></script>  
+  
+  
+<input name="cookieData" type="hidden" data-cookie-cookiesAlertType='false' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(234, 239, 241)' data-cookie-opacityOverlay='80' data-cookie-bgOpacity='100' data-cookie-textButton='Am înțeles' data-cookie-rejectText='Reject' data-cookie-colorButton='#149dcc' data-cookie-rejectColor='#ffffff' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="Pagina folosește cookies pentru realizarea serviciilor. Poți să setezi condițiile stocării sau accesului la folderele cookies în browser-ul tău. ">
+   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
+</html>

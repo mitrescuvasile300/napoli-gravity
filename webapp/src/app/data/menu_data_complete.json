@@ -1,22 +1,117 @@
 {
   "restaurant": {
     "name": "Pizzeria Napoli Centrale",
-    "description": "Pioniera bucătăriei cu specific italianesc din Cluj Napoca, încă din anul 1998. Originalitatea gustului bucătăriei Italiene este succesul nostru, fiecare produs având savoarea autentică a unei plimbări pe străzile din minunatul oraș Napoli.",
-    "address": "Strada Napoli, Cluj-Napoca",
-    "phone": "0040264450500",
-    "email": "contact@pizzerianapolicentrale.ro",
-    "website": "https://www.pizzerianapolicentrale.ro",
+    "description": "Pioniera bucătăriei cu specific italianesc din Cluj Napoca, încă din anul 1998.",
+    "locations": [
+      {
+        "id": "cluj",
+        "name": "Napoli Centrale Cluj",
+        "address": "Str. Dobrogeanu Gherea Nr. 17, Cluj-Napoca",
+        "phone": "+40 264 450 500",
+        "email": "contact@pizzerianapolicentrale.ro"
+      },
+      {
+        "id": "floresti",
+        "name": "Napoli Centrale Florești",
+        "address": "Strada Florilor 325 N, Florești",
+        "phone": "0364 715 555",
+        "email": "floresti@nint.ro"
+      }
+    ],
     "program": {
-      "luni_vineri": "10:00 - 22:00",
-      "sambata": "11:00 - 23:00",
-      "duminica": "12:00 - 21:00"
-    },
-    "currency": "RON",
-    "delivery": true,
-    "pickup": true,
-    "dine_in": true
+      "luni_vineri": "10:30 - 23:00",
+      "sambata_duminica": "11:00 - 23:00"
+    }
   },
   "categories": [
+    {
+      "id": "pizze_del_maestro",
+      "name": "Pizze del Maestro",
+      "description": "Creațiile speciale ale maestrului nostru pizzar",
+      "products": [
+        {
+          "id": "pm1",
+          "name": "Pizza Insalatosa",
+          "description": "Ingrediente adăugate la ieșire din cuptor",
+          "price": 56,
+          "gramaj": 520,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240218150710962_600.jpeg?v=24112319",
+          "popular": true
+        },
+        {
+          "id": "pm2",
+          "name": "Pizza Reginella",
+          "description": "Ingrediente adăugate la ieșire din cuptor",
+          "price": 53,
+          "gramaj": 500,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240217223602353_600.jpeg?v=24107632",
+          "popular": true
+        },
+        {
+          "id": "pm3",
+          "name": "Pizza Battilocchio",
+          "description": "Împaturata în jumătate",
+          "price": 54,
+          "gramaj": 480,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240218170726715_600.jpeg?v=24114438",
+          "popular": true
+        },
+        {
+          "id": "pm4",
+          "name": "Pizza Scugnizzo",
+          "description": "Creație specială a maestrului pizzar",
+          "price": 54,
+          "gramaj": 505,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240217223910040_600.jpeg?v=24107658",
+          "popular": false
+        },
+        {
+          "id": "pm5",
+          "name": "Pizza O' Guappo",
+          "description": "Marginile sunt răsucite și umplute cu mozzarella",
+          "price": 57,
+          "gramaj": 480,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240607222652567_600.jpeg?v=25468358",
+          "popular": true
+        },
+        {
+          "id": "pm6",
+          "name": "Pizza Genovese",
+          "description": "Cu pesto alla genovese",
+          "price": 54,
+          "gramaj": 490,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240218150710962_600.jpeg?v=24112319",
+          "popular": false
+        },
+        {
+          "id": "pm7",
+          "name": "Pizza Monella",
+          "description": "Creație specială Napoli Centrale",
+          "price": 55,
+          "gramaj": 500,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240217223602353_600.jpeg?v=24107632",
+          "popular": false
+        },
+        {
+          "id": "pm8",
+          "name": "Pizza Abbuttunata",
+          "description": "Pizza rustică cu bordură umplută",
+          "price": 56,
+          "gramaj": 510,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240218170726715_600.jpeg?v=24114438",
+          "popular": false
+        },
+        {
+          "id": "pm9",
+          "name": "Pizza Maruzzella",
+          "description": "Creație specială a casei",
+          "price": 53,
+          "gramaj": 495,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img24095762_20240217223910040_600.jpeg?v=24107658",
+          "popular": false
+        }
+      ]
+    },
     {
       "id": "pizza",
       "name": "Pizza",
@@ -24,313 +119,258 @@
       "products": [
         {
           "id": "p1",
-          "name": "Margherita",
-          "description": "Sos de roșii, mozzarella fior di latte, busuioc proaspăt, ulei de măsline extravirgin",
-          "price": 28,
-          "gramaj": 380,
-          "image": "margherita.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
+          "name": "Pizza Margherita Fior di Latte",
+          "description": "Sos de roșii, mozzarella fior di latte, busuioc proaspăt",
+          "price": 44,
+          "gramaj": 520,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144905327_600.jpeg?v=24112093",
+          "popular": true
         },
         {
           "id": "p2",
-          "name": "Quattro Formaggi",
-          "description": "Mozzarella, gorgonzola, parmezan, provola - amestec de 4 brânzeturi italiene",
-          "price": 35,
-          "gramaj": 420,
-          "image": "quattro_formaggi.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
+          "name": "Pizza Napoletana",
+          "description": "Sos de roșii, mozzarella, anșoa, capere, măsline",
+          "price": 45,
+          "gramaj": 540,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144954454_600.jpeg?v=24112111",
+          "popular": true
         },
         {
           "id": "p3",
-          "name": "Diavola",
-          "description": "Sos de roșii, mozzarella, salame piccante, ardei iute, ulei de măsline",
-          "price": 32,
-          "gramaj": 400,
-          "image": "diavola.jpg",
+          "name": "Pizza Diavola",
+          "description": "Sos de roșii, mozzarella, salame piccante, ardei iute",
+          "price": 47,
+          "gramaj": 530,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144905327_600.jpeg?v=24112093",
           "popular": false,
-          "allergens": ["gluten", "lactose"],
           "spicy": true
         },
         {
           "id": "p4",
-          "name": "Prosciutto e Funghi",
-          "description": "Sos de roșii, mozzarella, prosciutto cotto, ciuperci proaspete, măsline",
-          "price": 34,
-          "gramaj": 410,
-          "image": "prosciutto_funghi.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
+          "name": "Pizza Quattro Formaggi",
+          "description": "Mozzarella, gorgonzola, parmezan, provola",
+          "price": 49,
+          "gramaj": 510,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144954454_600.jpeg?v=24112111",
+          "popular": true
         },
         {
           "id": "p5",
-          "name": "Quattro Stagioni",
-          "description": "Sos de roșii, mozzarella, ciuperci, prosciutto, anghinare, măsline",
-          "price": 36,
-          "gramaj": 430,
-          "image": "quattro_stagioni.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
+          "name": "Pizza Capricciosa",
+          "description": "Sos de roșii, mozzarella, prosciutto, ciuperci, anghinare",
+          "price": 48,
+          "gramaj": 610,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144905327_600.jpeg?v=24112093",
+          "popular": true
         },
         {
           "id": "p6",
-          "name": "Capricciosa",
-          "description": "Sos de roșii, mozzarella, prosciutto, ciuperci, anghinare, capere",
-          "price": 35,
-          "gramaj": 420,
-          "image": "capricciosa.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
+          "name": "Pizza Marinara",
+          "description": "Sos de roșii, usturoi, oregano, ulei de măsline extravirgin",
+          "price": 38,
+          "gramaj": 450,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144954454_600.jpeg?v=24112111",
+          "popular": false
         },
         {
           "id": "p7",
-          "name": "Calzone",
-          "description": "Pizza pliată cu mozzarella, ricotta, prosciutto cotto, ciuperci, ou",
-          "price": 33,
-          "gramaj": 450,
-          "image": "calzone.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose", "ou"]
+          "name": "Pizza Bianca",
+          "description": "Mozzarella, ricotta, prosciutto crudo, rucola",
+          "price": 50,
+          "gramaj": 500,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144905327_600.jpeg?v=24112093",
+          "popular": false
         },
         {
           "id": "p8",
-          "name": "Napoli Centrale Special",
-          "description": "Sos de roșii, mozzarella, prosciutto crudo, rucola, parmezan, roșii cherry",
-          "price": 38,
-          "gramaj": 420,
-          "image": "special.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
+          "name": "Pizza Parmigiana",
+          "description": "Sos de roșii, mozzarella, vinete, parmezan",
+          "price": 47,
+          "gramaj": 530,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144954454_600.jpeg?v=24112111",
+          "popular": false
+        },
+        {
+          "id": "p9",
+          "name": "Pizza Romana",
+          "description": "Sos de roșii, mozzarella, anșoa, capere",
+          "price": 46,
+          "gramaj": 520,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144905327_600.jpeg?v=24112093",
+          "popular": false
+        },
+        {
+          "id": "p10",
+          "name": "Pizza Tonno e Cipolla",
+          "description": "Sos de roșii, mozzarella, ton, ceapă roșie",
+          "price": 47,
+          "gramaj": 530,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23891330_20240218144954454_600.jpeg?v=24112111",
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "paste_umplute",
+      "name": "Paste Umplute Făcute în Casă",
+      "description": "Paste umplute artizanale, preparate zilnic",
+      "products": [
+        {
+          "id": "pu1",
+          "name": "Tortellini Burro e Salvia",
+          "description": "Tortellini cu unt și salvie",
+          "price": 45,
+          "gramaj": 210,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900983_20240218145557376_600.jpeg?v=24112159",
+          "popular": true
+        },
+        {
+          "id": "pu2",
+          "name": "Lasagna alla Norma",
+          "description": "Straturi de paste, vinete, provola și urda",
+          "price": 47,
+          "gramaj": 300,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900983_20240218170611965_600.jpeg?v=24114427",
+          "popular": true
+        },
+        {
+          "id": "pu3",
+          "name": "Fagottini Quattro Formaggi",
+          "description": "Paste umplute cu hribi, patru brânzeturi",
+          "price": 48,
+          "gramaj": 200,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900983_20240218144740468_600.jpeg?v=24112081",
+          "popular": true
+        },
+        {
+          "id": "pu4",
+          "name": "Ravioli al Pomodoro Fresco",
+          "description": "Ravioli cu sos de roșii proaspete",
+          "price": 46,
+          "gramaj": 220,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900983_20240218145557376_600.jpeg?v=24112159",
+          "popular": false
+        },
+        {
+          "id": "pu5",
+          "name": "Cannelloni Ripieni",
+          "description": "Cannelloni umpluți cu ricotta și spanac",
+          "price": 45,
+          "gramaj": 280,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900983_20240218170611965_600.jpeg?v=24114427",
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "paste_casa",
+      "name": "Paste Făcute în Casă",
+      "description": "Paste proaspete pregătite manual în fiecare zi",
+      "products": [
+        {
+          "id": "pc1",
+          "name": "Spaghetti alla Chitarra Cacio e Pepe",
+          "description": "Paste cu pecorino romano și piper negru proaspăt",
+          "price": 45,
+          "gramaj": 160,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900979_20240218143444564_600.jpeg?v=24111895",
+          "popular": true
+        },
+        {
+          "id": "pc2",
+          "name": "Pasta Ragù Bolognese",
+          "description": "Paste cu ragù bolognese gătit lent",
+          "price": 44,
+          "gramaj": 220,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900979_20240218145442174_600.jpeg?v=24112157",
+          "popular": true
+        },
+        {
+          "id": "pc3",
+          "name": "Tagliolini ai Porcini",
+          "description": "Tagliolini cu ciuperci porcini",
+          "price": 46,
+          "gramaj": 230,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900979_20240218143444564_600.jpeg?v=24111895",
+          "popular": false
+        },
+        {
+          "id": "pc4",
+          "name": "Rigatini al Cartoccio",
+          "description": "Rigatini în cartoccio cu fructe de mare",
+          "price": 58,
+          "gramaj": 430,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900979_20240218145442174_600.jpeg?v=24112157",
+          "popular": true
         }
       ]
     },
     {
       "id": "paste",
       "name": "Paste",
-      "description": "Paste proaspete 'fatte in casa' - facute manual în fiecare zi",
+      "description": "Paste clasice italiene",
       "products": [
         {
           "id": "pa1",
-          "name": "Spaghetti Carbonara",
-          "description": "Spaghetti cu ou, guanciale, parmezan, piper negru - rețeta autentică romană",
-          "price": 32,
-          "gramaj": 350,
-          "image": "carbonara.jpg",
-          "popular": true,
-          "allergens": ["gluten", "ou", "lactose"]
+          "name": "Bucatini Amatriciana",
+          "description": "Bucatini cu sos de roșii, guanciale, pecorino",
+          "price": 45,
+          "gramaj": 210,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900979_20240218143444564_600.jpeg?v=24111895",
+          "popular": true
         },
         {
           "id": "pa2",
-          "name": "Tagliatelle al Ragù",
-          "description": "Tagliatelle proaspete cu ragù bolognese pregătit 4 ore",
-          "price": 34,
-          "gramaj": 380,
-          "image": "tagliatelle_ragu.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "pa3",
-          "name": "Penne Arrabbiata",
-          "description": "Penne cu sos de roșii picant, usturoi, ardei iute, pătrunjel",
-          "price": 28,
-          "gramaj": 340,
-          "image": "arrabbiata.jpg",
-          "popular": false,
-          "allergens": ["gluten"],
-          "spicy": true
-        },
-        {
-          "id": "pa4",
-          "name": "Fettuccine Alfredo",
-          "description": "Fettuccine cu sos cremos de unt și parmezan",
-          "price": 30,
-          "gramaj": 360,
-          "image": "alfredo.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "pa5",
-          "name": "Linguine alle Vongole",
-          "description": "Linguine cu scoici proaspete, usturoi, ulei de măsline, vin alb, pătrunjel",
-          "price": 42,
-          "gramaj": 380,
-          "image": "vongole.jpg",
-          "popular": true,
-          "allergens": ["gluten", "moluste"]
-        },
-        {
-          "id": "pa6",
-          "name": "Pappardelle al Cinghiale",
-          "description": "Pappardelle late cu ragù de mistreț și vin roșu",
-          "price": 38,
-          "gramaj": 380,
-          "image": "cinghiale.jpg",
-          "popular": false,
-          "allergens": ["gluten"]
-        },
-        {
-          "id": "pa7",
-          "name": "Ravioli Ricotta e Spinaci",
-          "description": "Ravioli umpluți cu ricotta și spanac, serviți cu sos de unt și salvie",
-          "price": 36,
-          "gramaj": 320,
-          "image": "ravioli.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "pa8",
-          "name": "Gnocchi alla Sorrentina",
-          "description": "Gnocchi de cartofi cu sos de roșii, mozzarella și busuioc, gratinați la cuptor",
-          "price": 30,
-          "gramaj": 340,
-          "image": "gnocchi.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
-        }
-      ]
-    },
-    {
-      "id": "paste_umplute",
-      "name": "Paste Umplute",
-      "description": "Paste umplute făcute în casă - Lasagne, Ravioli, Tortelloni, Tagliatelle",
-      "products": [
-        {
-          "id": "pu1",
-          "name": "Lasagne al Forno",
-          "description": "Lasagne cu ragù bolognese, béchamel și parmezan, gratinate la cuptor",
-          "price": 36,
-          "gramaj": 400,
-          "image": "lasagne.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "pu2",
-          "name": "Tortelloni Burro e Salvia",
-          "description": "Tortelloni umpluți cu ricotta și spanac în unt cu salvie",
-          "price": 34,
-          "gramaj": 320,
-          "image": "tortelloni.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "pu3",
-          "name": "Cannelloni Ricotta e Spinaci",
-          "description": "Cannelloni cu ricotta, spanac și sos de roșii, gratinați cu mozzarella",
-          "price": 32,
+          "name": "Spaghetti allo Scoglio",
+          "description": "Spaghetti cu fructe de mare proaspete",
+          "price": 55,
           "gramaj": 350,
-          "image": "cannelloni.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "pu4",
-          "name": "Fagottini ai Funghi",
-          "description": "Fagottini cu ciuperci sălbatice în sos de smântână și trufe",
-          "price": 38,
-          "gramaj": 310,
-          "image": "fagottini.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900979_20240218145442174_600.jpeg?v=24112157",
+          "popular": true
         }
       ]
     },
     {
       "id": "specialitati",
       "name": "Specialitățile Casei",
-      "description": "Preparate unice create de bucătarii noștri italieni",
+      "description": "Preparate unice create de bucătarii noștri",
       "products": [
         {
           "id": "sc1",
-          "name": "Saltimbocca alla Romana",
-          "description": "Escalope de vită cu prosciutto și salvie, în vin alb, servit cu legume",
-          "price": 48,
-          "gramaj": 320,
-          "image": "saltimbocca.jpg",
+          "name": "Bucatini Ricotta e Nduja",
+          "description": "Bucatini cu ricotta cremoasă și nduja picantă",
+          "price": 49,
+          "gramaj": 210,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900985_20240922181142579_600.jpeg?v=26705727",
           "popular": true,
-          "allergens": ["lactose"]
+          "spicy": true
         },
         {
           "id": "sc2",
-          "name": "Osso Buco alla Milanese",
-          "description": "Rasol de vițel gătit lent în vin alb cu legume, gremolata",
-          "price": 52,
-          "gramaj": 450,
-          "image": "ossobuco.jpg",
-          "popular": false,
-          "allergens": []
+          "name": "Paccheri al Pomodoro Fresco",
+          "description": "Paccheri cu sos de roșii proaspete și busuioc",
+          "price": 47,
+          "gramaj": 200,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900985_20240218145033748_600.jpeg?v=24112112",
+          "popular": true
         },
         {
           "id": "sc3",
           "name": "Melanzane alla Parmigiana",
           "description": "Vinete gratinate cu sos de roșii, mozzarella și parmezan",
-          "price": 32,
-          "gramaj": 350,
-          "image": "melanzane.jpg",
-          "popular": true,
-          "allergens": ["lactose"]
+          "price": 49,
+          "gramaj": 340,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900985_20240922181142579_600.jpeg?v=26705727",
+          "popular": true
         },
         {
           "id": "sc4",
-          "name": "Pollo alla Cacciatora",
-          "description": "Pui vânătoresc cu roșii, măsline, ciuperci și ierburi aromatice",
-          "price": 38,
-          "gramaj": 380,
-          "image": "cacciatora.jpg",
-          "popular": false,
-          "allergens": []
-        }
-      ]
-    },
-    {
-      "id": "salate",
-      "name": "Salate",
-      "description": "Salate proaspete cu legume de sezon",
-      "products": [
-        {
-          "id": "s1",
-          "name": "Insalata Caprese",
-          "description": "Roșii proaspete, mozzarella fior di latte, busuioc, ulei de măsline",
-          "price": 28,
-          "gramaj": 280,
-          "image": "caprese.jpg",
-          "popular": true,
-          "allergens": ["lactose"]
-        },
-        {
-          "id": "s2",
-          "name": "Insalata Mista",
-          "description": "Mix de salate, roșii cherry, castraveți, măsline, ceapă roșie",
-          "price": 22,
-          "gramaj": 250,
-          "image": "mista.jpg",
-          "popular": false,
-          "allergens": []
-        },
-        {
-          "id": "s3",
-          "name": "Insalata di Rucola e Parmigiano",
-          "description": "Rucola proaspătă cu parmezan, roșii uscate, pinți, ulei de măsline",
-          "price": 26,
-          "gramaj": 220,
-          "image": "rucola.jpg",
-          "popular": true,
-          "allergens": ["lactose", "nuci"]
-        },
-        {
-          "id": "s4",
-          "name": "Insalata Cesare",
-          "description": "Salată Caesar cu pui la grătar, crutoane, parmezan, sos Caesar",
-          "price": 32,
-          "gramaj": 320,
-          "image": "cesare.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose", "ou", "pesti"]
+          "name": "Pasta e Fasule",
+          "description": "Supă tradițională de paste cu fasole",
+          "price": 46,
+          "gramaj": 230,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900985_20240218145033748_600.jpeg?v=24112112",
+          "popular": false
         }
       ]
     },
@@ -341,92 +381,61 @@
       "products": [
         {
           "id": "d1",
-          "name": "Tiramisù",
-          "description": "Clasic tiramisù cu mascarpone, cafea și cacao",
-          "price": 22,
-          "gramaj": 150,
-          "image": "tiramisu.jpg",
-          "popular": true,
-          "allergens": ["gluten", "lactose", "ou"]
+          "name": "Tiramisu",
+          "description": "Clasicul tiramisù cu mascarpone, cafea și cacao",
+          "price": 21,
+          "gramaj": 110,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900998_20240218150731563_600.jpeg?v=24112322",
+          "popular": true
         },
         {
           "id": "d2",
-          "name": "Panna Cotta",
-          "description": "Panna cotta cu sos de fructe de pădure",
-          "price": 20,
-          "gramaj": 140,
-          "image": "pannacotta.jpg",
-          "popular": true,
-          "allergens": ["lactose"]
+          "name": "Delizia al Limone",
+          "description": "Desert cu cremă de lămâie",
+          "price": 23,
+          "gramaj": 100,
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900998_20240217223047556_600.jpeg?v=24107538",
+          "popular": true
         },
         {
           "id": "d3",
-          "name": "Cannoli Siciliani",
-          "description": "Cannoli crocant umplut cu ricotta dulce și ciocolată",
-          "price": 18,
-          "gramaj": 120,
-          "image": "cannoli.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose"]
-        },
-        {
-          "id": "d4",
-          "name": "Torta della Nonna",
-          "description": "Tort al bunicii cu cremă de vanilie și pinți",
-          "price": 24,
-          "gramaj": 160,
-          "image": "torta.jpg",
-          "popular": false,
-          "allergens": ["gluten", "lactose", "ou", "nuci"]
-        },
-        {
-          "id": "d5",
-          "name": "Gelato Artigianale",
-          "description": "Înghețată artizanală - ciocolată, vanilie, fistic, stracciatella",
-          "price": 16,
+          "name": "Cassatina Siciliana",
+          "description": "Desert sicilian tradițional cu ricotta",
+          "price": 23,
           "gramaj": 100,
-          "image": "gelato.jpg",
-          "popular": true,
-          "allergens": ["lactose"],
-          "options": ["Ciocolată", "Vanilie", "Fistic", "Stracciatella", "Lămâie"]
+          "image": "https://apps.appy.ro/cdn/live/23891152/img23900998_20240217223030306_600.jpeg?v=24107537",
+          "popular": true
         }
       ]
     },
     {
       "id": "bauturi",
       "name": "Băuturi",
-      "description": "Băuturi răcoritoare, vinuri și cafea",
+      "description": "Băuturi răcoritoare și cafea",
       "products": [
         {
           "id": "b1",
-          "name": "Apă Plată/Minerală",
-          "description": "Apă plată sau minerală 0.5L",
-          "price": 8,
-          "gramaj": 500,
-          "image": "apa.jpg",
-          "popular": false,
-          "allergens": [],
-          "options": ["Plată", "Minerală"]
+          "name": "Coca-Cola",
+          "description": "Coca-Cola 0.33L",
+          "price": 12,
+          "gramaj": 330,
+          "popular": false
         },
         {
           "id": "b2",
-          "name": "Coca-Cola / Fanta / Sprite",
-          "description": "Băuturi răcoritoare 0.33L",
-          "price": 12,
-          "gramaj": 330,
-          "image": "cola.jpg",
-          "popular": false,
-          "allergens": []
+          "name": "Apa Dorna",
+          "description": "Apă plată sau minerală 0.5L",
+          "price": 8,
+          "gramaj": 500,
+          "popular": false
         },
         {
           "id": "b3",
-          "name": "Limonată Casă",
-          "description": "Limonată proaspătă făcută în casă cu mentă",
-          "price": 16,
+          "name": "Limonada Casei",
+          "description": "Limonada proaspătă făcută în casă",
+          "price": 18,
           "gramaj": 400,
-          "image": "limonada.jpg",
-          "popular": true,
-          "allergens": []
+          "popular": true
         },
         {
           "id": "b4",
@@ -434,9 +443,7 @@
           "description": "Cafea espresso italiană",
           "price": 10,
           "gramaj": 30,
-          "image": "espresso.jpg",
-          "popular": true,
-          "allergens": []
+          "popular": true
         },
         {
           "id": "b5",
@@ -444,30 +451,54 @@
           "description": "Cappuccino cu spumă de lapte",
           "price": 14,
           "gramaj": 200,
-          "image": "cappuccino.jpg",
-          "popular": true,
-          "allergens": ["lactose"]
-        },
+          "popular": true
+        }
+      ]
+    },
+    {
+      "id": "bere_artizanala",
+      "name": "Bere Artizanală",
+      "description": "Selecție de beri artizanale",
+      "products": [
         {
-          "id": "b6",
-          "name": "Vin Casă (pahar)",
-          "description": "Vin roșu sau alb de casă 150ml",
+          "id": "ba1",
+          "name": "Bere a La Cluj",
+          "description": "Bere artizanală locală",
           "price": 18,
-          "gramaj": 150,
-          "image": "vin.jpg",
-          "popular": false,
-          "allergens": [],
-          "options": ["Roșu", "Alb"]
+          "gramaj": 330,
+          "popular": true
         },
         {
-          "id": "b7",
-          "name": "Birra Moretti",
-          "description": "Bere italiană Moretti 0.33L",
-          "price": 16,
+          "id": "ba2",
+          "name": "Hophead Opium",
+          "description": "Bere artizanală IPA",
+          "price": 20,
           "gramaj": 330,
-          "image": "moretti.jpg",
-          "popular": true,
-          "allergens": ["gluten"]
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "sosuri",
+      "name": "Sosuri",
+      "description": "Sosuri și extra toppings",
+      "products": [
+        {
+          "id": "so1",
+          "name": "Ulei Picant",
+          "description": "Ulei de măsline cu ardei iute",
+          "price": 5,
+          "gramaj": 30,
+          "popular": false,
+          "spicy": true
+        },
+        {
+          "id": "so2",
+          "name": "Sos de Roșii Dulce",
+          "description": "Sos de roșii dulce casa noastră",
+          "price": 5,
+          "gramaj": 50,
+          "popular": false
         }
       ]
     }
@@ -477,7 +508,6 @@
     "min_order": 50,
     "free_delivery_threshold": 100,
     "estimated_delivery_time": "45-60 minute",
-    "payment_methods": ["cash", "card", "online"],
-    "tax_rate": 0.09
+    "payment_methods": ["cash", "card"]
   }
 }

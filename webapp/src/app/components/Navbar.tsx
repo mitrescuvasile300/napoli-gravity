@@ -1,123 +1,112 @@
 "use client";
-
-import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ShoppingCart, Pizza } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useCart } from "./CartContext";
+import { Menu, X, ShoppingBag } from "lucide-react";
 
-interface NavbarProps {
-  cartItemCount?: number;
-}
+export default function Navbar() {
+  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalItems, setIsCartOpen } = useCart();
 
-export default function Navbar({ cartItemCount = 0 }: NavbarProps) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const navLinks = [
-    { href: "/", label: "Acasă" },
-    { href: "/meniu", label: "Meniu" },
-    { href: "/despre", label: "Despre" },
-    { href: "/contact", label: "Contact" },
-  ];
+  const isHome = pathname === "/";
+
+  const navBg = isScrolled
+    ? "bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#1A3C34]/10 py-4 shadow-sm"
+    : isHome
+      ? "bg-transparent py-6 border-b border-transparent"
+      : "bg-[#FAF7F2] py-5 border-b border-[#1A3C34]/10";
+
+  const textColor = isScrolled || !isHome ? "text-[#1A3C34]" : "text-white";
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white shadow-lg border-b-4 border-red-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <>
+      <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${navBg}`}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="bg-red-600 p-2 rounded-full transition-transform duration-300 group-hover:scale-110">
-              <Pizza className="h-8 w-8 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-red-600 tracking-tight">
-                Napoli
-              </span>
-              <span className="text-sm font-medium text-green-700 -mt-1">
-                Centrale
-              </span>
-            </div>
+          <Link href="/" className="flex items-center gap-2 z-50">
+            <img
+              src="/images/napoli-centrale-logo.webp"
+              alt="Napoli Centrale"
+              className={`h-10 transition-all duration-500 ${!isScrolled && isHome ? 'brightness-0 invert' : ''}`}
+            />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-10">
+            {[
+              { href: "/", label: "Acasă" },
+              { href: "/meniu", label: "Meniu" },
+              { href: "/despre", label: "Povestea Noastră" },
+              { href: "/contact", label: "Contact" },
+            ].map(link => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-gray-700 font-medium text-lg hover:text-red-600 transition-colors duration-200 py-2 group"
+                className={`text-sm font-semibold tracking-wide transition-colors hover:text-[#C5A47E] ${pathname === link.href ? "text-[#C5A47E]" : textColor}`}
+                style={!isScrolled && isHome ? { textShadow: '0 1px 8px rgba(0,0,0,0.5)' } : {}}
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
-          </div>
+          </nav>
 
-          {/* Cart Icon & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            {/* Cart */}
-            <Link
-              href="/cos"
-              className="relative p-2 text-gray-700 hover:text-red-600 transition-colors duration-200 group"
+          {/* Actions */}
+          <div className="flex items-center gap-4 z-50">
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="relative bg-[#1A3C34] text-white rounded-full p-2.5 flex items-center justify-center hover:bg-[#153029] transition-all shadow-lg shadow-[#1A3C34]/20"
             >
-              <ShoppingCart className="h-7 w-7 transition-transform duration-200 group-hover:scale-110" />
-              {cartItemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center shadow-md animate-pulse">
-                  {cartItemCount > 99 ? "99+" : cartItemCount}
+              <ShoppingBag className="w-5 h-5" />
+              {totalItems > 0 && (
+                <span className="absolute -top-1 -right-1 bg-[#C5A47E] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full ring-2 ring-[#FAF7F2]">
+                  {totalItems}
                 </span>
               )}
-            </Link>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-700 hover:text-red-600 hover:bg-red-50 transition-all duration-200"
-              aria-label={isMobileMenuOpen ? "Închide meniu" : "Deschide meniu"}
-            >
-              {isMobileMenuOpen ? (
-                <X className="h-7 w-7" />
-              ) : (
-                <Menu className="h-7 w-7" />
-              )}
+            </button>
+            <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X className={`w-6 h-6 ${textColor}`} /> : <Menu className={`w-6 h-6 ${textColor}`} />}
             </button>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <div className="bg-white border-t border-gray-100 px-4 py-4 space-y-2 shadow-inner">
-          {navLinks.map((link, index) => (
+      {/* Full Screen Mobile Menu */}
+      <div className={`fixed inset-0 bg-[#FAF7F2] z-40 transition-transform duration-500 ease-out flex flex-col justify-center items-center ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+        <nav className="flex flex-col items-center gap-8 w-full max-w-sm">
+          {[
+            { href: "/", label: "Acasă" },
+            { href: "/meniu", label: "Meniul Nostru" },
+            { href: "/despre", label: "Povestea Noastră" },
+            { href: "/contact", label: "Contact & Rezervări" },
+          ].map(link => (
             <Link
               key={link.href}
               href={link.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-red-50 hover:text-red-600 transition-all duration-200"
-              style={{
-                animationDelay: `${index * 50}ms`,
-              }}
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-3xl font-bold transition-colors hover:text-[#C5A47E] ${pathname === link.href ? "text-[#C5A47E]" : "text-[#1A3C34]"
+                }`}
+              style={{ fontFamily: "Cormorant Garamond, serif" }}
             >
               {link.label}
             </Link>
           ))}
-          
-          {/* Mobile Cart Link */}
-          <Link
-            href="/cos"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="flex items-center justify-between px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-green-50 hover:text-green-700 transition-all duration-200 border-t border-gray-100 mt-2 pt-4"
-          >
-            <span>Coș de cumpărături</span>
-            {cartItemCount > 0 && (
-              <span className="bg-green-600 text-white text-sm font-bold rounded-full h-6 w-6 flex items-center justify-center">
-                {cartItemCount > 99 ? "99+" : cartItemCount}
-              </span>
-            )}
-          </Link>
+        </nav>
+        <div className="mt-16 text-center">
+          <p className="text-xs tracking-[0.3em] uppercase text-[#C5A47E] mb-4 font-semibold">Comenzi Rapide</p>
+          <a href="tel:+40264450500" className="text-xl text-[#1A3C34] hover:text-[#C5A47E] transition-colors" style={{ fontFamily: "Cormorant Garamond, serif" }}>
+            +40 264 450 500
+          </a>
         </div>
       </div>
-    </nav>
+    </>
   );
 }

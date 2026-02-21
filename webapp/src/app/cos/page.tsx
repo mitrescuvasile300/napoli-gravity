@@ -1,137 +1,89 @@
 "use client";
-
-import Link from "next/link";
 import { useCart } from "../components/CartContext";
-import { Minus, Plus, Trash2, ShoppingBag, ArrowLeft } from "lucide-react";
+import { Minus, Plus, Trash2, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function CartPage() {
-  const { items, updateQuantity, removeItem, totalPrice, totalItems } = useCart();
-
-  const deliveryFee = totalPrice >= 100 ? 0 : 10;
-  const total = totalPrice + deliveryFee;
+  const { items, removeItem, updateQuantity, totalPrice, orderType, setOrderType } = useCart();
+  const router = useRouter();
 
   if (items.length === 0) {
     return (
-      <div className="min-h-screen bg-gray-50 py-12">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <div className="bg-white rounded-2xl shadow-md p-12">
-            <ShoppingBag className="h-24 w-24 text-gray-300 mx-auto mb-6" />
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">Coșul tău este gol</h1>
-            <p className="text-gray-600 mb-8">
-              Adaugă produse delicioase din meniul nostru italian!
-            </p>
-            <Link
-              href="/meniu"
-              className="inline-flex items-center bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-colors"
-            >
-              <ArrowLeft className="mr-2 h-5 w-5" />
-              Vezi Meniul
-            </Link>
-          </div>
+      <div className="min-h-screen bg-[#FAF7F2] flex items-center justify-center p-6">
+        <div className="text-center max-w-lg mt-20">
+          <h1 className="text-4xl font-bold text-[#1A3C34] mb-6" style={{ fontFamily: "Cormorant Garamond, serif" }}>Coșul este gol</h1>
+          <p className="text-[#2D2D2D]/60 font-light mb-10">Începeți călătoria culinară prin selecția noastră de preparate artizanale.</p>
+          <Link href="/meniu" className="btn-primary">Explorați Meniul</Link>
         </div>
       </div>
     );
   }
 
+  const deliveryFee = orderType === "delivery" ? (totalPrice >= 100 ? 0 : 10) : 0;
+  const total = totalPrice + deliveryFee;
+
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Coș de cumpărături</h1>
+    <div className="min-h-screen bg-[#FAF7F2] text-[#2D2D2D] pt-32 pb-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-20">
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1A3C34] mb-4 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}>Coșul Dumneavoastră</h1>
+          <div className="w-20 h-1 bg-[#C5A47E]"></div>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Cart Items */}
-          <div className="lg:col-span-2 space-y-4">
-            {items.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-xl shadow-md p-4 flex items-center space-x-4"
-              >
-                {/* Image Placeholder */}
-                <div className="w-20 h-20 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🍽️</span>
-                </div>
-
-                {/* Info */}
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-gray-900 truncate">{item.name}</h3>
-                  <p className="text-red-600 font-semibold">{item.price} lei</p>
-                </div>
-
-                {/* Quantity Controls */}
-                <div className="flex items-center space-x-2">
-                  <button
-                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-                  >
-                    <Minus className="h-4 w-4" />
-                  </button>
-                  <span className="w-8 text-center font-semibold">{item.quantity}</span>
-                  <button
-                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-                  >
-                    <Plus className="h-4 w-4" />
-                  </button>
-                </div>
-
-                {/* Total & Remove */}
-                <div className="text-right">
-                  <p className="font-bold text-gray-900">
-                    {(item.price * item.quantity).toFixed(2)} lei
-                  </p>
-                  <button
-                    onClick={() => removeItem(item.id)}
-                    className="text-red-500 hover:text-red-700 text-sm flex items-center mt-1"
-                  >
-                    <Trash2 className="h-4 w-4 mr-1" />
-                    Șterge
-                  </button>
-                </div>
-              </div>
-            ))}
-
-            <Link
-              href="/meniu"
-              className="inline-flex items-center text-red-600 hover:text-red-700 font-medium"
-            >
-              <ArrowLeft className="mr-2 h-5 w-5" />
-              Continuă cumpărăturile
-            </Link>
-          </div>
-
-          {/* Order Summary */}
-          <div className="lg:col-span-1">
-            <div className="bg-white rounded-xl shadow-md p-6 sticky top-24">
-              <h2 className="text-xl font-bold text-gray-900 mb-6">Sumar comandă</h2>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex justify-between text-gray-600">
-                  <span>Subtotal ({totalItems} produse)</span>
-                  <span>{totalPrice.toFixed(2)} lei</span>
-                </div>
-                <div className="flex justify-between text-gray-600">
-                  <span>Livrare</span>
-                  <span>{deliveryFee === 0 ? "Gratis" : `${deliveryFee} lei`}</span>
-                </div>
-                {deliveryFee > 0 && (
-                  <p className="text-sm text-gray-500">
-                    Livrare gratuită pentru comenzi peste 100 lei
-                  </p>
-                )}
-                <div className="border-t pt-3">
-                  <div className="flex justify-between text-xl font-bold text-gray-900">
-                    <span>Total</span>
-                    <span className="text-red-600">{total.toFixed(2)} lei</span>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <div className="lg:col-span-8">
+            <div className="divide-y divide-[#1A3C34]/10">
+              {items.map((item) => (
+                <div key={item.id} className="py-8 flex flex-col sm:flex-row gap-6 group">
+                  <div className="w-28 h-36 rounded-xl overflow-hidden bg-[#1A3C34]/5 shrink-0">
+                    {item.image ? (
+                      <Image src={item.image} alt={item.name} width={112} height={144} className="object-cover w-full h-full" />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-[10px] text-[#1A3C34]/30 uppercase tracking-widest">Img</div>
+                    )}
+                  </div>
+                  <div className="flex-1 flex flex-col justify-between py-1">
+                    <div className="flex justify-between items-start gap-4">
+                      <h3 className="text-2xl font-bold text-[#1A3C34]" style={{ fontFamily: "Cormorant Garamond, serif" }}>{item.name}</h3>
+                      <span className="font-bold text-lg text-[#1A3C34]">{(item.price * item.quantity).toFixed(0)} lei</span>
+                    </div>
+                    <div className="flex items-center justify-between mt-4">
+                      <div className="flex items-center gap-4 bg-white border border-[#1A3C34]/10 rounded-full px-4 py-2">
+                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="text-[#1A3C34]/60 hover:text-[#C5A47E] transition-colors"><Minus className="w-4 h-4" /></button>
+                        <span className="w-6 text-center font-bold text-[#1A3C34]">{item.quantity}</span>
+                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="text-[#1A3C34]/60 hover:text-[#C5A47E] transition-colors"><Plus className="w-4 h-4" /></button>
+                      </div>
+                      <button onClick={() => removeItem(item.id)} className="text-[#2D2D2D]/40 hover:text-red-500 transition-colors"><Trash2 className="w-5 h-5" /></button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
+            </div>
+          </div>
 
-              <Link
-                href="/checkout"
-                className="block w-full bg-red-600 text-white text-center py-4 rounded-full font-bold hover:bg-red-700 transition-colors"
-              >
-                Continuă cu Checkout
-              </Link>
+          <div className="lg:col-span-4">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-[#1A3C34]/5 sticky top-32">
+              <h2 className="text-xl font-bold mb-6 text-[#1A3C34]" style={{ fontFamily: "Cormorant Garamond, serif" }}>Rezumat</h2>
+              <div className="flex gap-2 mb-6 bg-[#1A3C34]/5 p-1 rounded-full">
+                <button onClick={() => setOrderType("delivery")} className={`flex-1 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest transition-colors ${orderType === "delivery" ? "bg-[#1A3C34] text-white" : "text-[#1A3C34]/60"}`}>Livrare</button>
+                <button onClick={() => setOrderType("pickup")} className={`flex-1 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest transition-colors ${orderType === "pickup" ? "bg-[#1A3C34] text-white" : "text-[#1A3C34]/60"}`}>Ridicare</button>
+              </div>
+              <div className="space-y-3 text-sm border-b border-[#1A3C34]/10 pb-6 mb-6">
+                <div className="flex justify-between"><span className="text-[#2D2D2D]/60">Subtotal</span><span className="font-bold">{totalPrice.toFixed(0)} lei</span></div>
+                {orderType === "delivery" && <div className="flex justify-between"><span className="text-[#2D2D2D]/60">Livrare</span><span className="font-bold">{deliveryFee === 0 ? "Gratuit" : `${deliveryFee} lei`}</span></div>}
+              </div>
+              <div className="flex justify-between items-baseline mb-8">
+                <span className="text-xs tracking-widest uppercase font-bold text-[#C5A47E]">Total</span>
+                <span className="text-3xl font-bold text-[#1A3C34]" style={{ fontFamily: "Cormorant Garamond, serif" }}>{total.toFixed(0)} lei</span>
+              </div>
+              <button onClick={() => router.push("/checkout")} className="btn-primary w-full flex items-center justify-center gap-2">
+                Finalizare <ArrowRight className="w-4 h-4" />
+              </button>
+              <div className="mt-4 text-center">
+                <Link href="/meniu" className="text-xs text-[#2D2D2D]/50 hover:text-[#C5A47E] transition-colors">← Înapoi la meniu</Link>
+              </div>
             </div>
           </div>
         </div>

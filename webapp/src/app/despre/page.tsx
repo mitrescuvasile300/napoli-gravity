@@ -1,87 +1,69 @@
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function AboutPage() {
+export default function DesprePage() {
   return (
-    <div className="min-h-screen bg-[#FAF9F6]">
-      {/* Header */}
-      <div className="relative bg-gradient-to-br from-[#8B0000] via-[#B22222] to-[#8B0000] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4" style={{fontFamily: 'Playfair Display, serif'}}>
-            Despre Noi
-          </h1>
-          <div className="w-24 h-1 mx-auto bg-[#D4AF37]" />
+    <div className="min-h-screen bg-[#FAF7F2] text-[#2D2D2D] pt-32 pb-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-20">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <h1 className="text-5xl md:text-6xl text-[#1A3C34] font-bold mb-4 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}>Povestea Noastră</h1>
+          <div className="w-24 h-0.5 bg-[#C5A47E] mx-auto mb-6"></div>
+          <p className="text-[#1A3C34]/60 text-lg font-light max-w-xl mx-auto">O tradiție culinară care transcende timpul și definește gustul autentic italian.</p>
         </div>
-      </div>
 
-      {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-[#8B0000]/10">
-          <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6" style={{fontFamily: 'Playfair Display, serif'}}>
-            Povestea Napoli Centrale
-          </h2>
-          
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{fontFamily: 'Cormorant Garamond, serif'}}>
-            Pizzeria Spaghetteria Napoli Centrale este pioniera bucătăriei cu specific italianesc 
-            din orașul Cluj Napoca, încă din anul 1998. Originalitatea gustului bucătăriei Italiene 
-            este succesul nostru, fiecare produs având savoarea autentică a unei plimbări pe străzile 
-            din minunatul oraș Napoli.
-          </p>
-
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed" style={{fontFamily: 'Cormorant Garamond, serif'}}>
-            Puteți savura o pizza pe minunata noastră terasă, oază de liniște în centrul Clujului, 
-            înconjurați de o grădină plină de verdeață. Conducerea familială conferă restaurantului 
-            Napoli Centrale o atmosferă primitoare care te face să te simți ca și acasă.
-          </p>
-
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed" style={{fontFamily: 'Cormorant Garamond, serif'}}>
-            Pastele noastre "fatte in casa" vă vor cuceri din prima îmbucătură, savoarea lor autentică 
-            și aspectul lor încântător vă așteaptă proaspete în fiecare zi. Lasagne, Ravioli, Tortelloni, 
-            Tagliatelle, Rigatini, Pappardelle, Fagottini... mmmm... Che buone!!!
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            <div className="text-center p-6 bg-[#8B0000]/5 rounded-2xl">
-              <div className="text-4xl font-bold text-[#8B0000] mb-2" style={{fontFamily: 'Playfair Display, serif'}}>25+</div>
-              <div className="text-gray-600">Ani de Experiență</div>
+        {/* Story Block 1 */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
+          <div className="relative group">
+            <div className="absolute -inset-4 border-2 border-[#C5A47E] rounded-lg translate-x-4 translate-y-4 -z-10 opacity-30 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+            <div className="relative rounded-lg overflow-hidden border-4 border-white shadow-2xl">
+              <Image src="/images/hero-pizza.png" alt="Prepararea blatului" width={600} height={500} className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
-            <div className="text-center p-6 bg-[#8B0000]/5 rounded-2xl">
-              <div className="text-4xl font-bold text-[#8B0000] mb-2" style={{fontFamily: 'Playfair Display, serif'}}>40+</div>
-              <div className="text-gray-600">Preparate</div>
-            </div>
-            <div className="text-center p-6 bg-[#8B0000]/5 rounded-2xl">
-              <div className="text-4xl font-bold text-[#8B0000] mb-2" style={{fontFamily: 'Playfair Display, serif'}}>1000+</div>
-              <div className="text-gray-600">Clienți Fericiți</div>
-            </div>
+          </div>
+          <div className="space-y-6">
+            <h2 className="text-[#1A3C34] text-3xl md:text-4xl font-bold leading-tight" style={{ fontFamily: "Cormorant Garamond, serif" }}>Arta Răbdării</h2>
+            <div className="w-16 h-1 bg-[#C5A47E]"></div>
+            <p className="text-lg leading-relaxed text-[#2D2D2D]/80">Totul începe cu apa, sarea, făina tip "00" și drojdia. Însă magia adevărată se întâmplă atunci când intervenim cel mai puțin: în timpul celor 48 de ore de dospire lentă la temperatură controlată.</p>
+            <p className="text-lg leading-relaxed text-[#2D2D2D]/80">Acest proces transformă aluatul într-o operă de digerabilitate și savoare, o pânză perfectă pentru ingredientele excepționale ce vor urma.</p>
           </div>
         </div>
 
-        {/* Program */}
-        <div className="mt-12 bg-white rounded-3xl shadow-xl p-8 border border-[#8B0000]/10">
-          <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8 text-center" style={{fontFamily: 'Playfair Display, serif'}}>
-            Program
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center p-6">
-              <Clock className="w-8 h-8 text-[#8B0000] mx-auto mb-4" />
-              <h3 className="font-bold text-lg mb-2">Luni - Vineri</h3>
-              <p className="text-gray-600">10:00 - 22:00</p>
-            </div>
-            <div className="text-center p-6">
-              <Clock className="w-8 h-8 text-[#8B0000] mx-auto mb-4" />
-              <h3 className="font-bold text-lg mb-2">Sâmbătă</h3>
-              <p className="text-gray-600">11:00 - 23:00</p>
-            </div>
-            <div className="text-center p-6">
-              <Clock className="w-8 h-8 text-[#8B0000] mx-auto mb-4" />
-              <h3 className="font-bold text-lg mb-2">Duminică</h3>
-              <p className="text-gray-600">12:00 - 21:00</p>
+        {/* Stats */}
+        <div className="py-16 border-y border-[#1A3C34]/10 my-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            {[
+              { value: "1998", label: "Anul Fondării" },
+              { value: "48h", label: "Fermentare" },
+              { value: "400°", label: "Temperatură Cuptor" },
+              { value: "100%", label: "Ingrediente DOP" },
+            ].map(stat => (
+              <div key={stat.label}>
+                <span className="block text-5xl md:text-6xl font-bold text-[#1A3C34] mb-2" style={{ fontFamily: "Cormorant Garamond, serif" }}>{stat.value}</span>
+                <span className="text-xs tracking-[0.2em] uppercase text-[#C5A47E] font-semibold">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Story Block 2 */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="space-y-6 order-2 lg:order-1">
+            <h2 className="text-[#1A3C34] text-3xl md:text-4xl font-bold leading-tight" style={{ fontFamily: "Cormorant Garamond, serif" }}>Respect pentru Tradiție</h2>
+            <div className="w-16 h-1 bg-[#C5A47E]"></div>
+            <p className="text-lg leading-relaxed text-[#2D2D2D]/80">Nu facem compromisuri. Roșiile San Marzano sunt recoltate manual de pe pantele vulcanului Vezuviu, iar mozzarella fior di latte ajunge proaspătă din regiunea Campania.</p>
+            <p className="text-lg leading-relaxed text-[#2D2D2D]/80">Fiecare pizza, fiecare farfurie de paste este un omagiu adus meșteșugarilor italieni care și-au dedicat viața perfecționării acestor rețete nemuritoare.</p>
+            <Link href="/meniu" className="inline-flex items-center gap-2 text-[#1A3C34] font-bold border-b-2 border-[#1A3C34] pb-1 hover:text-[#C5A47E] hover:border-[#C5A47E] transition-all">
+              Descoperiți colecția noastră →
+            </Link>
+          </div>
+          <div className="relative group order-1 lg:order-2">
+            <div className="absolute -inset-4 border-2 border-[#C5A47E] rounded-lg -translate-x-4 translate-y-4 -z-10 opacity-30 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+            <div className="relative rounded-lg overflow-hidden border-4 border-white shadow-2xl">
+              <Image src="/images/hero-restaurant.png" alt="Interior restaurant" width={600} height={500} className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
           </div>
         </div>
       </div>
-
-      {/* Italian Flag Bar */}
-      <div className="h-1.5 bg-gradient-to-r from-[#006400] via-white via-50% to-[#8B0000]" />
     </div>
   );
 }

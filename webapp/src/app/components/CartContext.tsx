@@ -10,7 +10,32 @@ export interface CartItem {
   image?: string;
   description?: string;
   options?: string;
+  gramaj?: number;
 }
+
+export type OrderType = "delivery" | "pickup";
+
+export interface PickupLocation {
+  id: string;
+  name: string;
+  address: string;
+  phone: string;
+}
+
+export const PICKUP_LOCATIONS: PickupLocation[] = [
+  {
+    id: "cluj",
+    name: "Napoli Centrale Cluj",
+    address: "Str. Dobrogeanu Gherea Nr. 17, Cluj-Napoca",
+    phone: "+40 264 450 500",
+  },
+  {
+    id: "floresti",
+    name: "Napoli Centrale Florești",
+    address: "Strada Florilor 325 N, Florești",
+    phone: "0364 715 555",
+  },
+];
 
 interface CartContextType {
   items: CartItem[];
@@ -20,12 +45,21 @@ interface CartContextType {
   clearCart: () => void;
   totalItems: number;
   totalPrice: number;
+  orderType: OrderType;
+  setOrderType: (type: OrderType) => void;
+  pickupLocation: PickupLocation;
+  setPickupLocation: (location: PickupLocation) => void;
+  isCartOpen: boolean;
+  setIsCartOpen: (open: boolean) => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
+  const [orderType, setOrderType] = useState<OrderType>("delivery");
+  const [pickupLocation, setPickupLocation] = useState<PickupLocation>(PICKUP_LOCATIONS[0]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const addItem = useCallback(
     (newItem: Omit<CartItem, "quantity"> & { quantity?: number }) => {
@@ -43,6 +77,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
         return [...currentItems, { ...newItem, quantity }];
       });
+      setIsCartOpen(true);
     },
     []
   );
@@ -83,6 +118,12 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         clearCart,
         totalItems,
         totalPrice,
+        orderType,
+        setOrderType,
+        pickupLocation,
+        setPickupLocation,
+        isCartOpen,
+        setIsCartOpen,
       }}
     >
       {children}
