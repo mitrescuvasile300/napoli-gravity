@@ -21,24 +21,24 @@ export default function Home() {
             { name: "Napoli Centrale Cluj", address: "Str. Dobrogeanu Gherea Nr. 17", hours: "L-V: 10:30-23:00 | S-D: 11:00-23:00", phone: "+40 264 450 500", img: "/images/interior-blue-wall.webp" },
             { name: "Napoli Centrale Florești", address: "Strada Florilor 325 N", hours: "L-D: 11:00-23:00", phone: "0364 715 555", img: "/images/interior-terrace1.webp" },
           ].map((loc) => (
-            <Link href="/meniu" key={loc.name} className="group relative rounded-2xl overflow-hidden h-[320px] flex items-end">
-              <Image src={loc.img} alt={loc.name} fill className="object-cover transition-transform duration-[1.5s] group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+            <div key={loc.name} className="group relative rounded-2xl overflow-hidden h-[320px] flex items-end">
+              <Link href="/meniu" className="absolute inset-0 z-0">
+                <span className="sr-only">Vezi Meniul {loc.name}</span>
+              </Link>
+              <Image src={loc.img} alt={loc.name} fill className="object-cover transition-transform duration-[1.5s] group-hover:scale-110 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none"></div>
               <div className="relative z-10 p-8 w-full">
-                <h3 className="text-white text-2xl font-bold mb-2" style={{ fontFamily: "Cormorant Garamond, serif" }}>{loc.name}</h3>
-                <p className="text-white/70 text-sm mb-1">{loc.address}</p>
-                <p className="text-white/50 text-xs mb-4">{loc.hours}</p>
+                <h3 className="text-white text-2xl font-bold mb-2 pointer-events-none" style={{ fontFamily: "Cormorant Garamond, serif" }}>{loc.name}</h3>
+                <p className="text-white/70 text-sm mb-1 pointer-events-none">{loc.address}</p>
+                <p className="text-white/50 text-xs mb-4 pointer-events-none">{loc.hours}</p>
                 <div className="flex items-center justify-between">
-                  <span
-                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.location.href = `tel:${loc.phone}`; }}
-                    className="text-[#C5A47E] text-sm font-semibold hover:text-white transition-colors cursor-pointer"
-                  >📞 {loc.phone}</span>
-                  <span className="text-white/80 text-xs font-semibold uppercase tracking-wider group-hover:text-[#C5A47E] transition-colors flex items-center gap-1">
+                  <a href={`tel:${loc.phone}`} className="text-[#C5A47E] text-sm font-semibold hover:text-white transition-colors relative z-20">📞 {loc.phone}</a>
+                  <span className="text-white/80 text-xs font-semibold uppercase tracking-wider group-hover:text-[#C5A47E] transition-colors flex items-center gap-1 pointer-events-none">
                     Vezi Meniul <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
                   </span>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
