@@ -124,8 +124,16 @@ export function CartDrawer() {
                                                 </div>
                                                 <div className="flex-1 flex flex-col justify-between py-1">
                                                     <div className="flex justify-between items-start gap-3">
-                                                        <h3 className="text-xl font-bold text-[#1A3C34] leading-tight" style={{ fontFamily: "Cormorant Garamond, serif" }}>{item.name}</h3>
-                                                        <span className="text-base font-bold text-[#1A3C34]">{(item.price * item.quantity).toFixed(0)} lei</span>
+                                                        <div className="flex-1 pr-2">
+                                                            <h3 className="text-xl font-bold text-[#1A3C34] leading-tight mb-1" style={{ fontFamily: "Cormorant Garamond, serif" }}>{item.name}</h3>
+                                                            {item.description && (
+                                                                <p className="text-[11px] text-[#1A3C34]/50 leading-snug line-clamp-2 mb-1">{item.description}</p>
+                                                            )}
+                                                            {item.gramaj && (
+                                                                <p className="text-[10px] text-[#C5A47E] font-bold tracking-widest uppercase">{item.gramaj}g</p>
+                                                            )}
+                                                        </div>
+                                                        <span className="text-base font-bold text-[#1A3C34] whitespace-nowrap mt-0.5">{(item.price * item.quantity).toFixed(0)} lei</span>
                                                     </div>
                                                     <div className="flex items-center justify-between mt-4">
                                                         <div className="flex items-center gap-4 bg-[#FAF7F2] border border-[#1A3C34]/10 rounded-full px-3 py-1.5 shadow-[inset_0_1px_2px_rgba(0,0,0,0.02)]">
