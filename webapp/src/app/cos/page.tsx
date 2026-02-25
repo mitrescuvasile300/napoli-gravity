@@ -46,8 +46,16 @@ export default function CartPage() {
                   </div>
                   <div className="flex-1 flex flex-col justify-between py-1">
                     <div className="flex justify-between items-start gap-4">
-                      <h3 className="text-2xl font-bold text-[#1A3C34]" style={{ fontFamily: "Cormorant Garamond, serif" }}>{item.name}</h3>
-                      <span className="font-bold text-lg text-[#1A3C34]">{(item.price * item.quantity).toFixed(0)} lei</span>
+                      <div className="flex-1 pr-4">
+                        <h3 className="text-2xl font-bold text-[#1A3C34] mb-2" style={{ fontFamily: "Cormorant Garamond, serif" }}>{item.name}</h3>
+                        {item.description && (
+                          <p className="text-sm text-[#1A3C34]/60 leading-relaxed max-w-xl mb-2">{item.description}</p>
+                        )}
+                        {item.gramaj && (
+                          <p className="text-xs text-[#C5A47E] font-bold tracking-[0.2em] uppercase">{item.gramaj}g</p>
+                        )}
+                      </div>
+                      <span className="font-bold text-xl text-[#1A3C34] whitespace-nowrap mt-1">{(item.price * item.quantity).toFixed(0)} lei</span>
                     </div>
                     <div className="flex items-center justify-between mt-4">
                       <div className="flex items-center gap-4 bg-white border border-[#1A3C34]/10 rounded-full px-4 py-2">
