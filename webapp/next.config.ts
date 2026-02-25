@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  distDir: 'dist',
-  images: {
-    unoptimized: true,
-  },
+  // Optimized for Vercel by default
+  // Vercel handles Image Optimization, SSR, and API routes automatically
 };
 
 export default nextConfig;
